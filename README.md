@@ -68,4 +68,4 @@ To do:
 
 I'm using [Github Discussions](https://github.com/petefoth/unofficial-l4m-builds/discussions/) as a means to provide feedback - comments, issues, suggestions. Please keep contributions civil and relevant. I will remove any that I decide are not :)
 
-If you have found something that you thinl is a bug, please feel free to [create an issue here](https://github.com/petefoth/unofficial-l4m-builds/issues)
+If you have found something that you think is a bug, please feel free to [create an issue here](https://github.com/petefoth/unofficial-l4m-builds/issues)
