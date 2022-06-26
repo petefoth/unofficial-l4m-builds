@@ -64,7 +64,8 @@ To do:
 - link to my manifests and build script
 - links to my `extendrom` fork repo and the upstream 
 
-
 ## Feedback - Comments / Issues
 
-If you have any feedback on these builds - comments, issues, suggestions - please feel free to [create an issue here](https://github.com/petefoth/unofficial-l4m-builds/issues)
+I'm using [Github Discussions](https://github.com/petefoth/unofficial-l4m-builds/discussions/) as a means to provide feedback - comments, issues, suggestions. Please keep contributions civil and relevant. I will remove any that I decide are not :)
+
+If you have found something that you thinl is a bug, please feel free to [create an issue here](https://github.com/petefoth/unofficial-l4m-builds/issues)
