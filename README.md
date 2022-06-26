@@ -2,7 +2,7 @@
 
 The purpose of this project is to make and manage unofficial builds of [LineageOS for microG](https://lineage.microg.org/), for devices which are not supported by official LineageOS builds.
 
-The builds are based on the unofficial LineageOS ROMs, details of which can be found in the appropriate XDA Forum thread(s). I am very grateful to the developers and maintainers of these ROMs, who have been very helpful to me, and to others in the community.
+The builds are based on the unofficial LineageOS ROMs, details of which can be found in the appropriate XDA Forum thread(s). I am very grateful to the developers and maintainers of these ROMs, who have been very helpful to me, and to others in the community. Big thanks also to the /e/ developers, and to the contributors to the [/e/ Community Forums](https://community.e.foundation/)
 
 Initially the builds will be for the following Sony Xperia devices, which I happen to own and use:
 - [Z5 Compact](https://www.gsmarena.com/sony_xperia_z5_compact-7535.php) (`suzuran`)
@@ -47,9 +47,9 @@ Most recent builds:
 
 ## Details of Custom build
 This build differs from the standard /e/OS and L4m builds as follows. (Unless otherwise stated, all the following come from F-Droid, and receive updates via F-Droid). The build includes
-- Aurora Store amd Aurora Services for installing and updating apps from Google's Play Store, in addition to L4m's F-Droid, and in place of /e/'s App Lounge;
-- /e/'s Bliss launcher alongside LOS's Trebuchet. Users choose which to use as default during first time setup. They can swap using Settings | Apps | Defaul apps;
-- QKSMS,in place of /e/'s fork and LOS's Messaging
+- Aurora Store and Aurora Services for installing and updating apps from Google's Play Store, in addition to L4m's F-Droid, and in place of /e/'s Apps / App Lounge;
+- /e/'s Bliss launcher alongside LOS's Trebuchet. Users choose which to use as default during first time setup. They can swap using Settings | Apps | Default apps;
+- QKSMS in place of /e/'s fork and LOS's Messaging
 - K-9 Mail in place of /e/'s fork and LOS's Email
 - OpenCamera in place of /e/'s fork and LOS's Snap
 - Bromite in place of /e/'s fork and LOS's Jelly. (This comes from Bromite's F-Droid repo, which is added to F-Droid's repos, allowing it to receive updates via F-Droid)
@@ -60,9 +60,9 @@ This build differs from the standard /e/OS and L4m builds as follows. (Unless ot
 
 ## Building the ROMs
 
-To do:
-- link to my manifests and build script
-- links to my `extendrom` fork repo and the upstream 
+*To do:*
+- *link to my manifests and build script*
+- *links to my `extendrom` fork repo and the upstream*
 
 ## Feedback - Comments / Issues
 
