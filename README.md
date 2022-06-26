@@ -12,18 +12,18 @@ Initially the builds will be for the following Sony Xperia devices, which I happ
 
 I am building two types of ROM
 - an unofficial 'vanilla' build, which is intended to be identical (or nearly so) to the official LineageOS for microG builds for similar devices
-- a custom build, aimed at users of the privacy-fiendly [/e/OS](https://e.foundation/e-os/) and their cloud ecosystem. /e/OS is based on LineageOS for microG, and is intended to be usable "out of the box" with the /e/ cloud services. It achieves this by including forks of various apps, which they have modified to have a consistent UI. They also include their own homescreen / launcher app, an alternative app store, and, in the most recent builds, an "Advanced Privacy" app. My custom build is aimed at users who 
+- a custom build, aimed at users of the privacy-friendly [/e/OS](https://e.foundation/e-os/) and their cloud ecosystem. /e/OS is based on LineageOS for microG, and is intended to be usable "out of the box" with the /e/ cloud services. It achieves this by including forks of various apps, which they have modified to have a consistent UI. They also include their own homescreen / launcher app, an alternative app store, and, in the most recent builds, an "Advanced Privacy" app. My custom build is aimed at users who 
   - would prefer to use the original "upstream" apps rather than /e/'s forks;
   - are happy with the privacy-friendiness and level of "de-Gooling" in LineageOS for microG;
   - are happy to get apps they need from the mature F-Droid and Aurora Store, rather than a new, less mature app from /e/.
 
-For XZ1 Compact, I have made both `lineage-17.1` and `lineage-18.1` builds, as many users seem to prefer the Sony stock Camera app, which works in `17.1` but not in `18.1`. For Z5 Compact I have only made `18.1` builds, since `18.1` works well.
+For XZ1 Compact, I have made both `lineage-17.1` and `lineage-18.1` builds, as many users prefer the Sony stock Camera app, which works in `17.1` but not in `18.1`. For Z5 Compact I have only made `18.1` builds, since `18.1` works well.
 
 ## The builds
 
 The builds can be downloaded from AndroidFileHost
 
-### Z5 Compact
+**Z5 Compact**
 
 The latest builds will always be available in [this directory](https://www.androidfilehost.com/?w=files&flid=322410)
 
@@ -33,8 +33,7 @@ Most recent builds:
 - custom "PLUS E" build
   - `18.1` [`lineage-18.1-20220619-4microg-CUSTOM-PLUS-E-suzuran.zip`](https://androidfilehost.com/?fid=15664248565197182679)
 
-
-### XZ1 Compact
+**XZ1 Compact**
 
 The latest builds will always be available in [this directory](https://androidfilehost.com/?w=files&flid=322414)
 
@@ -45,6 +44,26 @@ Most recent builds:
 - custom "PLUS E" builds
   - `17.1` [lineage-17.1-20220617-4microg-CUSTOM-PLUS-E-lilac.zip](https://androidfilehost.com/?fid=15664248565197181657)
   - `18.1` [lineage-18.1-20220621-4microg-CUSTOM-PLUS-E-lilac.zip](https://androidfilehost.com/?fid=15664248565197182709)
+
+## Details of Custom build
+This build differs from the standard /e/OS and L4m builds as follows. (Unless otherwise stated, all the following come from F-Droid, and receive updates via F-Droid). The build includes
+- Aurora Store amd Aurora Services for installing and updating apps from Google's Play Store, in addition to L4m's F-Droid, and in place of /e/'s App Lounge;
+- /e/'s Bliss launcher alongside LOS's Trebuchet. Users choose which to use as default during first time setup. They can swap using Settings | Apps | Defaul apps;
+- QKSMS,in place of /e/'s fork and LOS's Messaging
+- K-9 Mail in place of /e/'s fork and LOS's Email
+- OpenCamera in place of /e/'s fork and LOS's Snap
+- Bromite in place of /e/'s fork and LOS's Jelly. (This comes from Bromite's F-Droid repo, which is added to F-Droid's repos, allowing it to receive updates via F-Droid)
+- Fennec browser, to allow users a choice between Chromium-based and Firefox-based browsers;
+- NextCloud sync client in place of /e/'s eDrive 
+- NextCloud Notes, OpenTasks in place of /e/'s forks
+- DAVx5 and ICSx5 in place of /e/'s Account Manager
+
+## Building the ROMs
+
+To do:
+- link to my manifests and build script
+- links to my `extendrom` fork repo and the upstream 
+
 
 ## Feedback - Comments / Issues
 
