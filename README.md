@@ -29,9 +29,9 @@ The latest builds will always be available in [this directory](https://www.andro
 
 Most recent builds:
 - unofficial "vanilla" build
-  - `18.1` [lineage-18.1-20220619-4microg-UNOFFICIAL-suzuran.zip](https://androidfilehost.com/?fid=15664248565197182677)
+  - `18.1` [lineage-18.1-20220619-4microg-UNOFFICIAL-suzuran.zip](https://androidfilehost.com/?fid=15664248565197184325)
 - custom "PLUS E" build
-  - `18.1` [`lineage-18.1-20220619-4microg-CUSTOM-PLUS-E-suzuran.zip`](https://androidfilehost.com/?fid=15664248565197182679)
+  - `18.1` [`lineage-18.1-20220619-4microg-CUSTOM-PLUS-E-suzuran.zip`](https://www.androidfilehost.com/?fid=15664248565197184327)
 
 **XZ1 Compact**
 
@@ -39,11 +39,11 @@ The latest builds will always be available in [this directory](https://androidfi
 
 Most recent builds:
 - unofficial "vanilla" builds
-  - `17.1`  [lineage-17.1-20220617-4microg-UNOFFICIAL-lilac.zip](https://androidfilehost.com/?fid=15664248565197181658)
-  - `18.1` [lineage-18.1-20220621-4microg-UNOFFICIAL-lilac.zip](https://androidfilehost.com/?fid=15664248565197182839)
+  - `17.1`  [lineage-17.1-20220617-4microg-UNOFFICIAL-lilac.zip](https://androidfilehost.com/?fid=15664248565197184329)
+  - `18.1` [lineage-18.1-20220621-4microg-UNOFFICIAL-lilac.zip](https://androidfilehost.com/?fid=15664248565197184314)
 - custom "PLUS E" builds
-  - `17.1` [lineage-17.1-20220617-4microg-CUSTOM-PLUS-E-lilac.zip](https://androidfilehost.com/?fid=15664248565197181657)
-  - `18.1` [lineage-18.1-20220621-4microg-CUSTOM-PLUS-E-lilac.zip](https://androidfilehost.com/?fid=15664248565197182709)
+  - `17.1` [lineage-17.1-20220617-4microg-CUSTOM-PLUS-E-lilac.zip](https://androidfilehost.com/?fid=15664248565197184330)
+  - `18.1` [lineage-18.1-20220621-4microg-CUSTOM-PLUS-E-lilac.zip](https://androidfilehost.com/?fid=15664248565197184322)
 
 ## Details of Custom build
 This build differs from the standard /e/OS and L4m builds as follows. (Unless otherwise stated, all the following come from F-Droid, and receive updates via F-Droid). The build includes
