@@ -10,7 +10,7 @@ Initially the builds will be for the following Sony Xperia devices, the first tw
 - [XZ1 Compact](https://www.gsmarena.com/sony_xperia_xz1_compact-8610.php) (`lilac`)
    - Based on Alexander Grund / Flamefire's [LineageOS 17.1/18.1](https://forum.xda-developers.com/t/rom-unofficial-10-q-lineageos-17-1-for-z5c-suzuran.4052973/) ROMs, (based in turn on the work of `Modpunk & Derfelot`)  
 - [Z3 Tablet Compact](https://www.gsmarena.com/sony_xperia_z3_tablet_compact-6633.php)
-   - Based @evil-Go [LineageOS 18.1](https://forum.xda-developers.com/t/rom-z3tc-lineageos-18-1-sgp621-unofficial.4256523/) 
+   - Based @evil-God's [LineageOS 18.1](https://forum.xda-developers.com/t/rom-z3tc-lineageos-18-1-sgp621-unofficial.4256523/) ROMs
 
 I am building two types of ROM
 - an unofficial 'vanilla' build, which is intended to be identical (or nearly so) to the official LineageOS for microG builds for similar devices
