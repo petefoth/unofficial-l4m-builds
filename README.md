@@ -4,11 +4,13 @@ The purpose of this project is to make and manage unofficial builds of [LineageO
 
 The builds are based on the unofficial LineageOS ROMs, details of which can be found in the appropriate XDA Forum thread(s). I am very grateful to the developers and maintainers of these ROMs, who have been very helpful to me, and to others in the community. Big thanks also to the /e/ developers, and to the contributors to the [/e/ Community Forums](https://community.e.foundation/)
 
-Initially the builds will be for the following Sony Xperia devices, which I happen to own and use:
+Initially the builds will be for the following Sony Xperia devices, the first two of which I happen to own and use:
 - [Z5 Compact](https://www.gsmarena.com/sony_xperia_z5_compact-7535.php) (`suzuran`)
    - Based on Professor-Berni / Berni-0815's [LineageOS 18.1](https://forum.xda-developers.com/t/rom-unofficial-11-r-lineageos-18-1-for-z5c-suzuran.4205135/) ROMs
 - [XZ1 Compact](https://www.gsmarena.com/sony_xperia_xz1_compact-8610.php) (`lilac`)
-   - Based on Alexander Grund /F lamefire's [LineageOS 17.1/18.1](https://forum.xda-developers.com/t/rom-unofficial-10-q-lineageos-17-1-for-z5c-suzuran.4052973/) ROMs, (based in turn on the work of `Modpunk & Derfelot`)  
+   - Based on Alexander Grund / Flamefire's [LineageOS 17.1/18.1](https://forum.xda-developers.com/t/rom-unofficial-10-q-lineageos-17-1-for-z5c-suzuran.4052973/) ROMs, (based in turn on the work of `Modpunk & Derfelot`)  
+- [Z3 Tablet Compact](https://www.gsmarena.com/sony_xperia_z3_tablet_compact-6633.php)
+   - Based @evil-Go [LineageOS 18.1](https://forum.xda-developers.com/t/rom-z3tc-lineageos-18-1-sgp621-unofficial.4256523/) 
 
 I am building two types of ROM
 - an unofficial 'vanilla' build, which is intended to be identical (or nearly so) to the official LineageOS for microG builds for similar devices
@@ -29,9 +31,9 @@ The latest builds will always be available in [this directory](https://www.andro
 
 Most recent builds:
 - unofficial "vanilla" build
-  - `18.1` [lineage-18.1-20220619-4microg-UNOFFICIAL-suzuran.zip](https://androidfilehost.com/?fid=15664248565197184325)
+  - [lineage-18.1-20220619-4microg-UNOFFICIAL-suzuran.zip](https://androidfilehost.com/?fid=15664248565197184325)
 - custom "PLUS E" build
-  - `18.1` [`lineage-18.1-20220619-4microg-CUSTOM-PLUS-E-suzuran.zip`](https://www.androidfilehost.com/?fid=15664248565197184327)
+  - [`lineage-18.1-20220619-4microg-CUSTOM-PLUS-E-suzuran.zip`](https://www.androidfilehost.com/?fid=15664248565197184327)
 
 **XZ1 Compact**
 
@@ -44,6 +46,18 @@ Most recent builds:
 - custom "PLUS E" builds
   - `17.1` [lineage-17.1-20220617-4microg-CUSTOM-PLUS-E-lilac.zip](https://androidfilehost.com/?fid=15664248565197184330)
   - `18.1` [lineage-18.1-20220621-4microg-CUSTOM-PLUS-E-lilac.zip](https://androidfilehost.com/?fid=15664248565197184322)
+
+**Z3 Tablet Compact**
+
+The latest builds will always be available in [this directory](https://www.androidfilehost.com/?w=files&flid=335191)
+
+Most recent builds:
+- unofficial "vanilla" build
+  - `Wifi+4g` device `SGP621` [lineage-18.1-20220710-4microg-UNOFFICIAL-z3tc.zip](https://www.androidfilehost.com/?fid=15664248565197188468)
+  - `Wifi only` device `SGP611` [lineage-18.1-20220712-4microg-UNOFFICIAL-z3tcw.zip](https://www.androidfilehost.com/?fid=15664248565197188647)
+- custom "PLUS E" build
+  - `Wifi+4g` device `SGP621` [lineage-18.1-20220713-4microg-CUSTOM-PLUS-E-z3tc.zip](https://www.androidfilehost.com/?fid=15664248565197188964)
+  - `Wifi only` device `SGP611` [lineage-18.1-20220713-4microg-CUSTOM-PLUS-E-z3tcw.zip](https://www.androidfilehost.com/?fid=15664248565197188908)
 
 ## Details of Custom build
 This build differs from the standard /e/OS and L4m builds as follows. (Unless otherwise stated, all the following come from F-Droid, and receive updates via F-Droid). The build includes
