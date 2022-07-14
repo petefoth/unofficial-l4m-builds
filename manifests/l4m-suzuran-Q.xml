@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Devices -->
+  <project name="Professor-Berni/android_device_sony_kitakami-common"
+           path="device/sony/kitakami-common"
+           remote="github"
+           revision="lineage-17.1" />
+  <project name="Professor-Berni/android_device_sony_suzuran"
+           path="device/sony/suzuran"
+           remote="github"
+           revision="lineage-17.1" />
+
+  <!-- Kernel - we need the 18.1 kernel for some reason -->
+    <project name="Professor-Berni/android_kernel_sony_msm8994"
+           path="kernel/sony/msm8994"
+           remote="github"
+           revision="lineage-18.1" />
+
+  <project name="LineageOS/android_hardware_broadcom_fm" path="hardware/broadcom/fm" remote="github"  />
+  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" />
+
+
+
+  <!-- Vendor -->
+  <project name="Professor-Berni/proprietary_vendor_sony"
+           path="vendor/sony"
+           remote="github"
+           revision="lineage-17.1" />
+  <!-- Extra vendor blob's -->
+  <project name="Professor-Berni/proprietary_vendor_sony_extras"
+           path="vendor/sony/kitakami-common-extras"
+           remote="github"
+           revision="lineage-17.1" />   
+
+<!-- /e/ vendor repo
+    ##################################################### 
+    <project path="vendor/e" name="steadfasterX/android_vendor_e" remote="e" revision="v1-r" /> -->
+
+
+</manifest>

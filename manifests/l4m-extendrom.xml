@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes 
+    ##################################################### -->
+    <!-- github/sfX-Android -->
+    <remote name="sfX" fetch="https://github.com/sfX-Android/" />
+
+<!-- /e/ vendor repo
+    #####################################################
+    <project path="vendor/e" name="steadfasterX/android_vendor_e" remote="e" revision="v1-q" />  -->
+
+<!-- vendor extendrom 
+    ##################################################### -->
+    <!-- sFx's 
+    <project path="vendor/extendrom" name="android_vendor_extendrom" remote="sfX" revision="main" /> -->
+    
+    <!-- mine  -->
+   <project path="vendor/extendrom" name="petefoth/android_vendor_extendrom" remote="github" revision="pf-l4m-work" />
+    
+</manifest>
