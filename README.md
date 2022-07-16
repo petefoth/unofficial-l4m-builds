@@ -31,9 +31,9 @@ The latest builds will always be available in [this directory](https://www.andro
 
 Most recent builds:
 - unofficial "vanilla" build
-  - [lineage-18.1-20220619-4microg-UNOFFICIAL-suzuran.zip](https://androidfilehost.com/?fid=15664248565197184325)
+  - [lineage-18.1-20220715-4microg-UNOFFICIAL-suzuran.zip](https://www.androidfilehost.com/?fid=15664248565197189838)
 - custom "PLUS E" build
-  - [`lineage-18.1-20220619-4microg-CUSTOM-PLUS-E-suzuran.zip`](https://www.androidfilehost.com/?fid=15664248565197184327)
+  - [`lineage-18.1-20220714-4microg-CUSTOM-PLUS-E-suzuran.zip`](https://www.androidfilehost.com/?fid=15664248565197189483)
 
 **XZ1 Compact**
 
