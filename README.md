@@ -31,9 +31,9 @@ The latest builds will always be available in [this directory](https://www.andro
 
 Most recent builds:
 - unofficial "vanilla" build
-  - [lineage-18.1-20220619-4microg-UNOFFICIAL-suzuran.zip](https://androidfilehost.com/?fid=15664248565197184325)
+  - [lineage-18.1-20220715-4microg-UNOFFICIAL-suzuran.zip](https://www.androidfilehost.com/?fid=15664248565197189838)
 - custom "PLUS E" build
-  - [`lineage-18.1-20220619-4microg-CUSTOM-PLUS-E-suzuran.zip`](https://www.androidfilehost.com/?fid=15664248565197184327)
+  - [lineage-18.1-20220714-4microg-CUSTOM-PLUS-E-suzuran.zip](https://www.androidfilehost.com/?fid=15664248565197189483)
 
 **XZ1 Compact**
 
@@ -45,7 +45,7 @@ Most recent builds:
   - `18.1` [lineage-18.1-20220621-4microg-UNOFFICIAL-lilac.zip](https://androidfilehost.com/?fid=15664248565197184314)
 - custom "PLUS E" builds
   - `17.1` [lineage-17.1-20220617-4microg-CUSTOM-PLUS-E-lilac.zip](https://androidfilehost.com/?fid=15664248565197184330)
-  - `18.1` [lineage-18.1-20220621-4microg-CUSTOM-PLUS-E-lilac.zip](https://androidfilehost.com/?fid=15664248565197184322)
+  - `18.1` [lineage-18.1-20220621-4microg-CUSTOM-PLUS-E-lilac.zip](https://androidfilehost.com/?fid=15664248565197199038)
 
 **Z3 Tablet Compact**
 
