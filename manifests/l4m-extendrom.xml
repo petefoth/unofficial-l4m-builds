@@ -4,10 +4,11 @@
     ##################################################### -->
     <!-- github/sfX-Android -->
     <remote name="sfX" fetch="https://github.com/sfX-Android/" />
+    <remote name="e" fetch="https://gitlab.e.foundation/" />
 
 <!-- /e/ vendor repo
-    #####################################################
-    <project path="vendor/e" name="steadfasterX/android_vendor_e" remote="e" revision="v1-q" />  -->
+    #####################################################  -->
+    <project path="vendor/e" name="steadfasterX/android_vendor_e" remote="e" revision="v1-q" />
 
 <!-- vendor extendrom 
     ##################################################### -->
