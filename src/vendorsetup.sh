@@ -1,7 +1,7 @@
 echo "Running unofficial-l4m-build/src/vendorsetup.sh"
 
 ########## extendrom section ###########
-export ENABLE_EXTENDROM=false
+export ENABLE_EXTENDROM=true
 #export ENABLE_EXTENDROM=false
 
 # RELEASE_TYPE '4microg-CUSTOM-PLUS-E' or '4microg-PLUS-E-UNOFFICIAL'
