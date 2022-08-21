@@ -13,7 +13,7 @@ mkdir work
 
 cd work
 
-git clone git@github.com:petefoth/unofficial-l4m-builds.git l4m-builds
+git clone https://github.com/petefoth/unofficial-l4m-builds.git l4m-builds
 
 echo "Now follow the commands in l4m-builds/README.md"
 
