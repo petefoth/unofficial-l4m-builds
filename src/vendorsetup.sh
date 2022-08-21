@@ -2,6 +2,7 @@ echo "Running unofficial-l4m-build/src/vendorsetup.sh"
 
 ########## extendrom section ###########
 export ENABLE_EXTENDROM=false
+#export ENABLE_EXTENDROM=false
 
 # RELEASE_TYPE '4microg-CUSTOM-PLUS-E' or '4microg-PLUS-E-UNOFFICIAL'
 export EOS_RELEASE_TYPE='4microg-CUSTOM-PLUS-E'
@@ -16,6 +17,7 @@ export EOS_REPO=https://github.com/LineageOS/android.git
 export EOS_SIGN_BUILDS=true 
 export EOS_SIGNATURE_SPOOFING=restricted 
 export CUSTOM_PACKAGES=''
+export EOS_CUSTOM_PACKAGES=''
 export EXTENDROM_PACKAGES=''
 
 # TODO - add the UpstreamEtar package to replace LOS fork
