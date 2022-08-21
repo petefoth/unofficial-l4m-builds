@@ -7,11 +7,9 @@
 
     <!-- Pinned blobs for lilac
     <project name="Flamefire/android_vendor_sony_lilac" path="vendor/sony/lilac" remote="github" revision="lineage-18.1" />
-    <project name="petefoth/proprietary_vendor_sony" path="vendor/sony/" remote="e" revision="pf-lilac-R" /> 
-    <project name="Havoc-Devices/android_vendor_sony_lilac" path="vendor/sony/lilac" remote="github" revision="eleven" />
 
 -->
-    <project name="petefoth/android_vendor_sony_lilac" path="vendor/sony/lilac" remote="github" revision="pf-l18-work" />
+    <project name="petefoth/android_vendor_sony_lilac" path="vendor/sony/lilac" remote="github" revision="lineage-18.1" />
 
  
 </manifest>
