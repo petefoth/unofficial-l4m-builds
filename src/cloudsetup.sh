@@ -9,6 +9,9 @@ chmod +x android_build_env.sh
 git config --global user.name "Pete Fotheringham"
 git config --global user.email petefoth@e.email
 
+sudo mkdir /ccache
+sudo chmod a+rwx /ccache/
+
 mkdir work
 
 cd work
