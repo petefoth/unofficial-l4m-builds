@@ -43,3 +43,12 @@ if [ "$EOS_RELEASE_TYPE" = '4microg-CUSTOM-PLUS-E' ]; then
   # nothing to do!
   
 fi
+
+# inherit vendor e
+if grep -q 'vendor/e/config/common.mk' $PWD/vendor/lineage/config/common.mk ; then
+  echo "vendor e already there"
+else
+  echo "adding vendor e"
+  echo "\$(call inherit-product-if-exists, vendor/e/config/common.mk)" >> $PWD/vendor/lineage/config/common.mk
+fi
+
