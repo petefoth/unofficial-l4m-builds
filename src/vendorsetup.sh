@@ -1,3 +1,5 @@
+echo "Running unofficial-l4m-build/src/vendorsetup.sh"
+
 ########## extendrom section ###########
 export ENABLE_EXTENDROM=false
 
