@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes 
+    ##################################################### -->
+    <remote name="e" fetch="https://gitlab.e.foundation/" />
+
+<!-- /e/ vendor repo
+    #####################################################  -->
+    <project path="vendor/e" name="steadfasterX/android_vendor_e" remote="e" revision="v1-q" />
+    
+</manifest>
+Footer
