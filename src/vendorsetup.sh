@@ -18,7 +18,8 @@ export EOS_SIGNATURE_SPOOFING=restricted
 export CUSTOM_PACKAGES=''
 export EXTENDROM_PACKAGES=''
 
-l4m_custom_packages='AuroraStore AuroraServices BlissLauncher Bromite DAVx5 Etar ICSx5 NextCloud  NextCloudNotes OpenTasks K9-Mail Fennec QKSMS OpenCamera noLOSSnap noLOSEmail noLOSMessaging noLOSJelly'
+# TODO - add the UpstreamEtar package to replace LOS fork
+l4m_custom_packages='AuroraStore AuroraServices BlissLauncher Bromite DAVx5 ICSx5 NextCloud  NextCloudNotes OpenTasks K9-Mail Fennec QKSMS OpenCamera noLOSSnap noLOSEmail noLOSMessaging noLOSJelly'
 
 if [ "$EOS_RELEASE_TYPE" = '4microg-CUSTOM-PLUS-E' ]; then
 
