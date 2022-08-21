@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+
+<!-- Remotes -->
+  <remote name="gitlab" fetch="https://gitlab.com/" />
+
+
+  <!-- Devices -->
+  <project name="sony_scorpion/android_device_sony_z3tcw"
+           path="device/sony/z3tcw"
+           remote="gitlab" />
+
+  <project name="sony_scorpion/android_device_sony_z3tc"
+           path="device/sony/z3tc"
+           remote="gitlab" />
+
+  <project name="sony_scorpion/android_device_sony_shinano-common"
+          path="device/sony/shinano-common"
+          remote="gitlab" />
+
+  <project name="sony_scorpion/android_device_sony_msm8974-common"
+          path="device/sony/msm8974-common"
+          remote="gitlab" />
+
+  <project name="LineageOS/android_device_sony_common" path="device/sony/common" remote="github" revision="lineage-18.1" />
+
+  <!-- Hardware -->
+
+  <project name="LineageOS/android_hardware_broadcom_fm" path="hardware/broadcom/fm" remote="github" revision="lineage-18.1" />
+  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="lineage-18.1" />
+  <project name="LineageOS/android_hardware_sony_thermanager" path="hardware/sony/thermanager" remote="github" revision="lineage-18.1" />
+  <project name="LineageOS/android_hardware_sony_macaddrsetup" path="hardware/sony/macaddrsetup" remote="github" revision="lineage-18.1" />
+
+
+  <!-- Kernel -->
+  <project name="sony_scorpion/android_kernel_sony_msm8974"
+         path="kernel/sony/msm8974"
+         remote="gitlab" />
+
+  <!-- Vendor -->
+  <project name="sony_scorpion/android_vendor_sony"
+           path="vendor/sony"
+           remote="gitlab" />
+
+</manifest>
