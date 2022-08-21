@@ -5,8 +5,10 @@ export ENABLE_EXTENDROM=false
 export EOS_RELEASE_TYPE='4microg-CUSTOM-PLUS-E'
 export EOS_RELEASE_TYPE='4microg-UNOFFICIAL' 
 
-# EOS_BRANCH_NAME the `lineage-n.1` branch is set in the `repo init -u https://github.com/LineageOS/android.git -b lineage-17.1`
-export EOS_BRANCH_NAME=v1-R
+# EOS_BRANCH_NAME is the `lineage-n.1` branch is set in the `repo init -u https://github.com/LineageOS/android.git -b lineage-18.1`
+export EOS_BRANCH_NAME=v1-r
+# or do we need to do it here
+#export EOS_BRANCH_NAME=lineage-18.1
 
 export EOS_REPO=https://github.com/LineageOS/android.git
 export EOS_SIGN_BUILDS=true 
