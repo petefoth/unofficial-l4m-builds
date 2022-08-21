@@ -1,9 +1,12 @@
+echo "Running unofficial-l4m-build/src/vendorsetup.sh"
+
 ########## extendrom section ###########
-export ENABLE_EXTENDROM=false
+export ENABLE_EXTENDROM=true
+#export ENABLE_EXTENDROM=false
 
 # RELEASE_TYPE '4microg-CUSTOM-PLUS-E' or '4microg-PLUS-E-UNOFFICIAL'
 export EOS_RELEASE_TYPE='4microg-CUSTOM-PLUS-E'
-export EOS_RELEASE_TYPE='4microg-UNOFFICIAL' 
+#export EOS_RELEASE_TYPE='4microg-UNOFFICIAL' 
 
 # EOS_BRANCH_NAME is the `lineage-n.1` branch is set in the `repo init -u https://github.com/LineageOS/android.git -b lineage-18.1`
 export EOS_BRANCH_NAME=v1-r
@@ -14,9 +17,11 @@ export EOS_REPO=https://github.com/LineageOS/android.git
 export EOS_SIGN_BUILDS=true 
 export EOS_SIGNATURE_SPOOFING=restricted 
 export CUSTOM_PACKAGES=''
+export EOS_CUSTOM_PACKAGES=''
 export EXTENDROM_PACKAGES=''
 
-l4m_custom_packages='AuroraStore AuroraServices BlissLauncher Bromite DAVx5 Etar ICSx5 NextCloud  NextCloudNotes OpenTasks K9-Mail Fennec QKSMS OpenCamera noLOSSnap noLOSEmail noLOSMessaging noLOSJelly'
+# TODO - add the UpstreamEtar package to replace LOS fork
+l4m_custom_packages='AuroraStore AuroraServices BlissLauncher Bromite DAVx5 ICSx5 NextCloud  NextCloudNotes OpenTasks K9-Mail Fennec QKSMS OpenCamera noLOSSnap noLOSEmail noLOSMessaging noLOSJelly'
 
 if [ "$EOS_RELEASE_TYPE" = '4microg-CUSTOM-PLUS-E' ]; then
 
