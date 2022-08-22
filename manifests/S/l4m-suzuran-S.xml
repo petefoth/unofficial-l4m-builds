@@ -93,7 +93,7 @@ changes.xml - don't use these for now, in case they breal other device builds --
   <remove-project name="LineageOS/android_hardware_qcom_display" />
   <remove-project name="LineageOS/android_hardware_qcom_media" />
   <remove-project name="LineageOS/android_packages_apps_Camera2" /> -->
-  <!-- re-adds /
+  <!-- re-adds / -->
   <project name="LineageOS/android_hardware_qcom_audio"
            path="hardware/qcom-caf/msm8994/audio"
            remote="github"
@@ -113,6 +113,6 @@ changes.xml - don't use these for now, in case they breal other device builds --
   <project name="Professor-Berni/android_hardware_qcom_display"
            path="hardware/qcom-caf/msm8994/display"
            remote="github"
-           revision="lineage-18.1-caf-msm8994" /> -->
+           revision="lineage-18.1-caf-msm8994" />
   
 </manifest>
