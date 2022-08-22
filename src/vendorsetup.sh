@@ -19,6 +19,7 @@ export EOS_SIGNATURE_SPOOFING=restricted
 export CUSTOM_PACKAGES=''
 export EOS_CUSTOM_PACKAGES=''
 export EXTENDROM_PACKAGES=''
+export EOS_CCACHE_SIZE=50G
 
 # TODO - add the UpstreamEtar package to replace LOS fork
 l4m_custom_packages='AuroraStore AuroraServices BlissLauncher Bromite DAVx5 ICSx5 NextCloud  NextCloudNotes OpenTasks K9-Mail Fennec QKSMS OpenCamera noLOSSnap noLOSEmail noLOSMessaging noLOSJelly'
