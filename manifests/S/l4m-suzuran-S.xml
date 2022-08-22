@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+##################################################################
+All content comes from https://github.com/Professor-Berni/local_manifests
+##################################################################
+-->
+<manifest>
+<!-- 
+######################
+devices.xml
+-->
+  
+  
+  <project name="Professor-Berni/android_device_sony_kitakami-common"
+           path="device/sony/kitakami-common"
+           remote="github"
+           revision="lineage-19.1" />
+  <project name="Professor-Berni/android_device_sony_suzuran"
+           path="device/sony/suzuran"
+           remote="github"
+           revision="lineage-19.1" />
+  
+  
+<!-- 
+######################
+kernel.xml
+-->
+  <project name="Professor-Berni/android_kernel_sony_msm8994"
+           path="kernel/sony/msm8994"
+           remote="github"
+           revision="lineage-19.1" />
+  
+  
+<!-- 
+######################
+vendor.xml
+-->
+  <!-- Vendor -->
+  <project name="Professor-Berni/proprietary_vendor_sony"
+           path="vendor/sony"
+           remote="github"
+           revision="lineage-19.1" />
+  <!-- Extra vendor blob's -->
+  <project name="Professor-Berni/proprietary_vendor_sony_extras"
+           path="vendor/sony/kitakami-common-extras"
+           remote="github"
+           revision="lineage-19.1" />
+
+
+<!-- 
+######################
+lineage.xml
+-->
+  <project name="LineageOS/android_hardware_broadcom_fm"
+           path="hardware/broadcom/fm"
+           remote="github"
+           revision="lineage-18.1" />
+  <project name="LineageOS/android_vendor_qcom_opensource_libfmjni"
+           path="vendor/qcom/opensource/libfmjni"
+           remote="github"
+           revision="lineage-18.1" />
+  <project name="LineageOS/android_packages_apps_FMRadio"
+           path="packages/apps/FMRadio"
+           remote="github"
+           revision="lineage-18.1" />
+<!-- 
+######################
+removes.xml
+-->
+  <remove-project name="device/generic/arm64" />
+  <remove-project name="device/generic/armv7-a-neon" />
+  <remove-project name="device/generic/art" />
+  <remove-project name="device/generic/car" />
+  <remove-project name="device/generic/mini-emulator-arm64" />
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/trusty" />
+  <remove-project name="device/generic/uml" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="platform/hardware/invensense" />
+  <remove-project name="platform/prebuilts/android-emulator" />
+  <remove-project name="platform/prebuilts/qemu-kernel" />
+
+<!-- 
+######################
+changes.xml - don't use these for now, in case they breal other device builds -->
+
+  <!--removes /
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+  <remove-project name="LineageOS/android_packages_apps_Camera2" /> -->
+  <!-- re-adds /
+  <project name="LineageOS/android_hardware_qcom_audio"
+           path="hardware/qcom-caf/msm8994/audio"
+           remote="github"
+           revision="lineage-18.1-caf-msm8994" />
+  <project name="LineageOS/android_hardware_qcom_media"
+           path="hardware/qcom-caf/msm8994/media"
+           remote="github"
+           revision="lineage-18.1-caf-msm8994" />
+  <project name="LineageOS/android_packages_apps_Snap"
+           path="packages/apps/Snap"
+           remote="github"
+           revision="lineage-18.1" />
+  <project name="Professor-Berni/android_device_qcom_sepolicy"
+           path="device/qcom/sepolicy-legacy"
+           remote="github"
+           revision="lineage-19.1-legacy" />
+  <project name="Professor-Berni/android_hardware_qcom_display"
+           path="hardware/qcom-caf/msm8994/display"
+           remote="github"
+           revision="lineage-18.1-caf-msm8994" /> -->
+  
+</manifest>
