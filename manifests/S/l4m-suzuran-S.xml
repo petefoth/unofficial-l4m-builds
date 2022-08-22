@@ -86,13 +86,13 @@ removes.xml
 
 <!-- 
 ######################
-changes.xml - don't use these for now, in case they breal other device builds -->
+changes.xml - these may break other device builds -->
 
-  <!--removes /
+  <!--removes /  -->
   <remove-project name="LineageOS/android_hardware_qcom_audio" />
   <remove-project name="LineageOS/android_hardware_qcom_display" />
   <remove-project name="LineageOS/android_hardware_qcom_media" />
-  <remove-project name="LineageOS/android_packages_apps_Camera2" /> -->
+  <remove-project name="LineageOS/android_packages_apps_Camera2" />
   <!-- re-adds / -->
   <project name="LineageOS/android_hardware_qcom_audio"
            path="hardware/qcom-caf/msm8994/audio"
