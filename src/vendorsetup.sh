@@ -23,6 +23,9 @@ export EOS_CCACHE_SIZE=50G
 
 export WITH_GMS=true
 
+## Temporary workaround for `--enforce-uses-libraries` issue #12
+export RELAX_USES_LIBRARY_CHECK=true
+
 # TODO - add the UpstreamEtar package to replace LOS fork
 l4m_custom_packages='AuroraStore AuroraServices BlissLauncher Bromite DAVx5 ICSx5 NextCloud  NextCloudNotes OpenTasks K9-Mail-latest Fennec QKSMS OpenCamera noLOSSnap noLOSEmail noLOSMessaging noLOSJelly'
 
