@@ -10,6 +10,7 @@
 # .e.userscripts, so it will be called by android_vendor_e/post-sync.sh
 #########################################################
 
+rm -rf ${TMP_DIR}/l4m-cicd
 git clone https://github.com/lineageos4microg/docker-lineage-cicd.git ${TMP_DIR}/l4m-cicd
 
 # The patch to use depends on android_version_major
@@ -31,7 +32,7 @@ esac
 cd frameworks/base
 echo ">> [$(date)] Applying the restricted signature spoofing patch (based on $frameworks_base_patch) to frameworks/base"
 
-sed 's/android:protectionLevel="dangerous"/android:protectionLevel="signature|privileged"/' "${TMP_DIR}/l4m-cicd/signature_spoofing_patches/$frameworks_base_patch" | patch --force -p1
+sed 's/android:protectionLevel="dangerous"/android:protectionLevel="signature|privileged"/' "${TMP_DIR}/l4m-cicd/src/signature_spoofing_patches/$frameworks_base_patch" | patch --force -p1
 
 git clean -q -f
 cd ../..
