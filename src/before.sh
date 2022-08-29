@@ -30,6 +30,7 @@ esac
 
 # apply the patch
 cd frameworks/base
+git reset --hard
 echo ">> [$(date)] Applying the restricted signature spoofing patch (based on $frameworks_base_patch) to frameworks/base"
 
 sed 's/android:protectionLevel="dangerous"/android:protectionLevel="signature|privileged"/' "${TMP_DIR}/l4m-cicd/src/signature_spoofing_patches/$frameworks_base_patch" | patch --force -p1
