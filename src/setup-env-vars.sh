@@ -1,65 +1,67 @@
-echo "Running unofficial-l4m-build/src/vendorsetup.sh"
+#!/bin/bash
 
-########## extendrom section ###########
-export ENABLE_EXTENDROM=true
-#export ENABLE_EXTENDROM=false
+#########################################################
+# - specify the release type
+# - specify the branch name
+# - set and export the environment variables needed by
+#   - vendor/e
+#   - vendor/extendrom if we're making a custom builds
+# - copy our `before.sh` to userscripts directory
 
-# RELEASE_TYPE '4microg-CUSTOM-PLUS-E' or '4microg-PLUS-E-UNOFFICIAL'
+echo "Running unofficial-l4m-build/src/setup-env-vars.sh"
+
+#########################################################
+# specify the release type
+# - '4microg-CUSTOM-PLUS-E' or '4microg-UNOFFICIAL'
+# - comment/uncomment according to which you want
 export EOS_RELEASE_TYPE=4microg-CUSTOM-PLUS-E
-#export EOS_RELEASE_TYPE=4microg-UNOFFICIAL 
+#export EOS_RELEASE_TYPE=4microg-UNOFFICIAL
 
-# EOS_BRANCH_NAME is the `lineage-n.1` branch is set in the `repo init -u https://github.com/LineageOS/android.git -b lineage-18.1`
+#########################################################
+# specify the /e/OS branch name: use /e/ naming scheme
+# v1-q, v1-r, v1-s
 export EOS_BRANCH_NAME=v1-r
-# or do we need to do it here
-#export EOS_BRANCH_NAME=lineage-18.1
 
+#########################################################
+# environment variables needed by vendor/e
 export EOS_REPO=https://github.com/LineageOS/android.git
-export EOS_SIGN_BUILDS=true 
-export EOS_SIGNATURE_SPOOFING=restricted 
+export EOS_SIGN_BUILDS=true
+export EOS_SIGNATURE_SPOOFING=restricted
 export CUSTOM_PACKAGES=''
 export EOS_CUSTOM_PACKAGES=''
 export EXTENDROM_PACKAGES=''
 export EOS_CCACHE_DIR="$PWD/ccache/l4m"
 
-export WITH_GMS=true
-
 ## Temporary workaround for `--enforce-uses-libraries` issue #12
 export RELAX_USES_LIBRARY_CHECK=true
 
-# TODO - add the UpstreamEtar package to replace LOS fork
 l4m_custom_packages='AuroraStore AuroraServices BlissLauncher Bromite DAVx5 ICSx5 NextCloud  NextCloudNotes OpenTasks K9-Mail-latest Fennec QKSMS OpenCamera noLOSSnap noLOSEmail noLOSMessaging noLOSJelly'
 
-if [ "$EOS_RELEASE_TYPE" = 4microg-CUSTOM-PLUS-E ]; then
-
-  ########### l4m plus e custom build ###########
-  if [ "$ENABLE_EXTENDROM" = true ]; then
+case "$EOS_RELEASE_TYPE" in
+  4microg-CUSTOM-PLUS-E)
+    export WITH_GMS=true
+    export ENABLE_EXTENDROM=true
     export EXTENDROM_PACKAGES=$l4m_custom_packages
-    
-    if grep -q 'inherit-product-if-exists, vendor/extendrom/config/common.mk' $PWD/vendor/lineage/config/common.mk ; then
-      echo "extendrom already there"
-    else
-      echo "adding extendrom"
-      echo "\$(call inherit-product-if-exists, vendor/extendrom/config/common.mk)" >> $PWD/vendor/lineage/config/common.mk
-    fi
+  ;;
 
-    $PWD/vendor/extendrom/get_prebuilts.sh
+  4microg-UNOFFICIAL)
+  export WITH_GMS=true
+  export ENABLE_EXTENDROM=false
+  ;;
 
-  else
-    export CUSTOM_PACKAGES=$l4m_custom_packages
-    export EOS_CUSTOM_PACKAGES=$l4m_custom_packages
-  fi
-  
-# else
-  ########### l4m vanilla unofficial build ###########
-  # nothing to do!
-  
-fi
+  *)
+  # 'vanilla' LinegaOS - no microG
+  export WITH_GMS=false
+  export ENABLE_EXTENDROM=false
+  ;;
 
-# inherit vendor e
-if grep -q 'vendor/e/config/common.mk' $PWD/vendor/lineage/config/common.mk ; then
-  echo "vendor e already there"
-else
-  echo "adding vendor e"
-  echo "\$(call inherit-product-if-exists, vendor/e/config/common.mk)" >> $PWD/vendor/lineage/config/common.mk
-fi
+esac
 
+
+########################################################
+# copy before.sh to userscripts directory (.e/userscripts/)
+userscripts_dir="${pwd}/.e/userscripts"
+mkdir -p $userscripts_dir
+
+chmod a+x ./before.sh
+cp ./before.sh $userscripts_dir
