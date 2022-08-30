@@ -19,7 +19,7 @@ export EOS_SIGNATURE_SPOOFING=restricted
 export CUSTOM_PACKAGES=''
 export EOS_CUSTOM_PACKAGES=''
 export EXTENDROM_PACKAGES=''
-export EOS_CCACHE_SIZE=50G
+export EOS_CCACHE_DIR="$PWD/ccache/l4m"
 
 export WITH_GMS=true
 
