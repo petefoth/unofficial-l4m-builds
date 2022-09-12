@@ -1,0 +1,46 @@
+From 9b35132956899908011df1e80222f0b0e236a271 Mon Sep 17 00:00:00 2001
+From: Pete <petefoth@e.email>
+Date: Mon, 12 Sep 2022 17:15:33 +0100
+Subject: [PATCH] Workaround the 'ld file not found' error
+
+Change-Id: I34ffa599bd2c3fcfd69c0599d519bc63ac97cda4
+---
+ link-vmlinux-preparation.sh | 10 ++++++++++
+ scripts/link-vmlinux.sh     |  4 ++++
+ 2 files changed, 14 insertions(+)
+ create mode 100755 link-vmlinux-preparation.sh
+
+diff --git a/link-vmlinux-preparation.sh b/link-vmlinux-preparation.sh
+new file mode 100755
+index 000000000000..235f024b42cc
+--- /dev/null
++++ b/link-vmlinux-preparation.sh
+@@ -0,0 +1,10 @@
++!/bin/bash
++# Created by Deokgyu Yang <secugyu@gmail.com>
++
++# Create a soft link file named ld for use lld to fix the build error on modern clang
++# Remove "/clang" from $HOSTCC string
++CLANG_BIN="${HOSTCC:0:(-6)}"
++if [ ! -f "${CLANG_BIN}/ld" ]; then
++    ln -s "${CLANG_BIN}/lld" "${CLANG_BIN}/ld"
++fi
++
+diff --git a/scripts/link-vmlinux.sh b/scripts/link-vmlinux.sh
+index 545b225ceded..2198c3f9352d 100755
+--- a/scripts/link-vmlinux.sh
++++ b/scripts/link-vmlinux.sh
+@@ -241,6 +241,10 @@ if [ -n "${CONFIG_RKP_CFP}" ]; then
+     "${srctree}/scripts/rkp_cfp/instrument.py" --vmlinux "${objtree}/vmlinux" --inplace
+ fi
+ 
++if [ -f "${srctree}/link-vmlinux-preparation.sh" ]; then
++    "${srctree}/link-vmlinux-preparation.sh"
++fi
++
+ if [ -n "${CONFIG_RELOCATABLE_KERNEL}" ]; then
+     if [ -n "${CONFIG_CRYPTO_FIPS}" ] && [ -n "${CONFIG_FIPS_FMP}" ] ; then
+ 	echo '  FIPS with KALSR : Generating hmac of crypto and fmp, then update vmlinux... '
+-- 
+2.25.1
+
